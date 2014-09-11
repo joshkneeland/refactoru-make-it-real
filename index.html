@@ -23,13 +23,28 @@
 		</ol>
 	</nav>
 
+	<aside class="sidebar"> <!-- OUTSIDE OF MAIN CONTENT-->
+		<h4 class="sidebar-header">Recent Posts</h4>
+		<ul class="list-simple">
+			<li><a class="link-dim" href="#">Another Post</a></li>
+			<li><a class="link-dim" href="#">A Cool Story</a></li>
+			<li><a class="link-dim" href="#">Useful Tips and Tricks</a></li>
+		</ul>				
+		<h4 class="sidebar-header">Categories</h4>
+		<ul class="list-simple">
+			<li><a class="link-dim" href="#">Web</a></li>
+			<li><a class="link-dim" href="#">Dev</a></li>
+			<li><a class="link-dim" href="#">CSS</a></li>
+		</ul>		
+	</aside> <!-- END OF SIDEBAR -->
+
 	<div class="content"> <!-- ALL CONTENT BELOW THE NAV -->
 
 		<section>
 			<h1 class="article-title">Article Title</h1>
-			<div class="article-title-paragraph-wrapper-div">
+			<div class="padded-content">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores enim, labore veniam reprehenderit minus iure eos officia aperiam, totam nisi cumque atque eligendi. Distinctio ex animi, necessitatibus facilis quidem quaerat.</p>
-				<p>Lorem ipsum dolor sit amet, <strong class=".strong-subsection">consectetur adipisicing</strong> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <span class="article-paragraph-red-text">minim veniam</span>,
+				<p>Lorem ipsum dolor sit amet, <strong class="strong-subsection">consectetur adipisicing</strong> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <span class="emphasized-text">minim veniam</span>,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat.</p>
 
@@ -66,7 +81,7 @@
 
 		<section class="sub-section">
 			<h2 class="section-title">Section Title</h2>
-			<div class="section-title-paragraph-wrapper-div">
+			<div class="section-content">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores enim, labore veniam reprehenderit minus iure eos officia aperiam, totam nisi cumque atque eligendi. Distinctio ex animi, necessitatibus facilis quidem quaerat.</p>	
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores enim, labore veniam reprehenderit minus iure eos officia aperiam, totam nisi cumque atque eligendi. Distinctio ex animi, necessitatibus facilis quidem quaerat.</p>
 			</div>
@@ -74,9 +89,9 @@
 
 		<section class="sub-section">
 			<h2 class="section-title">Section Title</h2>
-			<div class="section-title-paragraph-wrapper-div">
+			<div class="section-content">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores enim, labore veniam reprehenderit minus iure eos officia aperiam, totam nisi cumque atque eligendi. Distinctio ex animi, necessitatibus facilis quidem quaerat.</p>	
-			<div class="gray-box-with-code">
+			<div class="code-block">
 			<p>$('#myElement').click(function(){
 				<span class="break">console.log('Clicked!')</span>
 				<span class="break">});</span>
@@ -90,7 +105,7 @@
 
 		<section class="sub-section">
 			<h2 class="section-title">Section Title</h2>
-			<div class="section-title-paragraph-wrapper-div">
+			<div class="section-content">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores enim, labore veniam reprehenderit minus iure eos officia aperiam, totam nisi cumque atque eligendi. Distinctio ex animi, necessitatibus facilis quidem quaerat.</p>	
 
 			<div class="placeholder-img-1">
@@ -101,77 +116,69 @@
 	            <li><strong class="strong-subsection">Make Pretty with CSS:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, veritatis voluptatibus minus quia voluptate quaerat provident enim mollitia consectetur itaque. Perspiciatis, culpa sit cupiditate alias accusantium libero vel ipsum optio.</li>
 	            <li><strong class="strong-subsection">Profit:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, recusandae, sit blanditiis quis ratione mollitia ipsa eaque ad perspiciatis laboriosam. Voluptates, odio consequatur sit unde reiciendis quam optio animi eum!</li>
 	          </ol>
-	          <p class="grey-author-text">Posted by <strong class="author-grey-bold">Author</strong> under Web > Dev on <strong class="author-grey-bold">January 13, 2014</strong></p>
+	          <p class="author-text">Posted by <strong>Author</strong> under Web > Dev on <strong>January 13, 2014</strong></p>
 		</section>
 
-		<section class="input-section">			
-			<h2>Comments</h2>
-			<h3 class="user-info">User Info</h3>
-			<form>
+		<section class="input-section">	
+		<form>		
+			<h2 class="input-header">Comments</h2>
+			<h3 class="user-info">User Info</h3>			
 				<div class="form-input-div">Email <input type="text" name="lastname"></div>
 				<div class="form-input-div">Display Name <input type="text" name="lastname"></div>
-				<div class="form-input-div">Website <input type="text" name="lastname"></div>
-			</form>
-
+				<div class="form-input-div">Website <input type="text" name="lastname"></div>		
 			<h3 class="user-info">Comment</h3>
-
-			<input type="text" name="lastname" class="comment-area-input-type">
-				<form>
-					
-				</form>
-
+			<!-- <input type="text" name="lastname" class="comment-area-input-type"> CHANGING THE INPUT TYPE TO TEXT AREA -->
+			<textarea name="comment" cols="85" rows="10" class="comment-area-input-type"></textarea> 
 			<input type="submit" value="Submit" class="submit-button">
-
+		</form>
 		</section>
-
 		<section class="user-comments">
+			<div class="user-comments-big-container"> <!-- START OF USER 1 GROUP -->
+				<div class="comments-stream-big-photo">
+			    	<img src="http://placehold.it/50x50">
+			    </div>
+				<div class="user-comments-user-info">
+					<h3 class="user-comments-header">User 1</h3>
+			    	<time class="comments-stream-time">January 13, 2014</time>
+			    </div>
+			    <p class="user-comments-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio blanditiis voluptate vero repellendus nemo animi expedita sapiente quibusdam, dolorum. Officiis, reprehenderit. Incidunt possimus repellat at praesentium doloremque aut suscipit dolor.</p>
+			</div> <!-- END OF USER 1 GROUP -->
+		
+		<div class="push-right">
+			<div class="user-comments-big-container"> <!-- START OF USER 2 GROUP -->
+				<div class="comments-stream-big-photo">
+			    	<img src="http://placehold.it/50x50">
+			    </div>
+				<div class="user-comments-user-info">
+					<h3 class="user-comments-header">User 2</h3>
+			    	<time class="comments-stream-time">January 13, 2014</time>
+			    </div>
+			    <p class="user-comments-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio blanditiis voluptate vero repellendus nemo animi expedita sapiente quibusdam, dolorum. Officiis, reprehenderit. Incidunt possimus repellat at praesentium doloremque aut suscipit dolor.</p>
+			</div> <!-- END OF USER 2 GROUP -->
 
-		<div class="user-comments-big-container">
-			<div class="comments-stream-big-photo">
-		    	<img src="http://placehold.it/50x50">
-		    </div>
-			<div class="user-comments-user-info">
-				<h3>User 1</h3>
-		    	<time class="comments-stream-time">January 13, 2014</time>
-		    </div>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio blanditiis voluptate vero repellendus nemo animi expedita sapiente quibusdam, dolorum. Officiis, reprehenderit. Incidunt possimus repellat at praesentium doloremque aut suscipit dolor.</p>
-		</div>
+			<div class="user-comments-big-container"> <!-- START OF USER 3 GROUP -->
+				<div class="comments-stream-big-photo">
+			    	<img src="http://placehold.it/50x50">
+			    </div>
+				<div class="user-comments-user-info">
+					<h3 class="user-comments-header">User 3</h3>
+			    	<time class="comments-stream-time">January 13, 2014</time>
+			    </div>
+			    <p class="user-comments-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio blanditiis voluptate vero repellendus nemo animi expedita sapiente quibusdam, dolorum. Officiis, reprehenderit. Incidunt possimus repellat at praesentium doloremque aut suscipit dolor.</p>
+			</div> <!-- END OF USER 3 GROUP -->
+			</div>	<!-- END OF PUSH USER 2 AND USER 3 CONTAINERS TO THE RIGHT --> 
 
-		<div class="user-comments-big-container">
-			<div class="comments-stream-big-photo">
-		    	<img src="http://placehold.it/50x50">
-		    </div>
-			<div class="user-comments-user-info">
-				<h3>User 2</h3>
-		    	<time class="comments-stream-time">January 13, 2014</time>
-		    </div>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio blanditiis voluptate vero repellendus nemo animi expedita sapiente quibusdam, dolorum. Officiis, reprehenderit. Incidunt possimus repellat at praesentium doloremque aut suscipit dolor.</p>
-		</div>
-
-		<div class="user-comments-big-container">
-			<div class="comments-stream-big-photo">
-		    	<img src="http://placehold.it/50x50">
-		    </div>
-			<div class="user-comments-user-info">
-				<h3>User 3</h3>
-		    	<time class="comments-stream-time">January 13, 2014</time>
-		    </div>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio blanditiis voluptate vero repellendus nemo animi expedita sapiente quibusdam, dolorum. Officiis, reprehenderit. Incidunt possimus repellat at praesentium doloremque aut suscipit dolor.</p>
-		</div>
-
-		<div class="user-comments-big-container">
-			<div class="comments-stream-big-photo">
-		    	<img src="http://placehold.it/50x50">
-		    </div>
-			<div class="user-comments-user-info">
-				<h3 class="user-comments-header">User 4</h3>
-		    	<time class="comments-stream-time">January 13, 2014</time>
-		    </div>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio blanditiis voluptate vero repellendus nemo animi expedita sapiente quibusdam, dolorum. Officiis, reprehenderit. Incidunt possimus repellat at praesentium doloremque aut suscipit dolor.</p>
-		</div>
-
+			<div class="user-comments-big-container"> <!-- START OF USER 4 GROUP -->
+				<div class="comments-stream-big-photo">
+			    	<img src="http://placehold.it/50x50">
+			    </div>
+				<div class="user-comments-user-info">
+					<h3 class="user-comments-header">User 4</h3>
+			    	<time class="comments-stream-time">January 13, 2014</time>
+			    </div>
+			    <p class="user-comments-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio blanditiis voluptate vero repellendus nemo animi expedita sapiente quibusdam, dolorum. Officiis, reprehenderit. Incidunt possimus repellat at praesentium doloremque aut suscipit dolor.</p>
+			</div> <!-- END OF USER 4 GROUP -->
 		</section>
-
 	</div> <!-- END OF CONTENT DIV -->
 
 </div> <!-- END OF CONTAINER DIV -->
