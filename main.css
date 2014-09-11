@@ -65,6 +65,10 @@ nav ol li {
 	font-size: 1.75em;
 }
 
+.article-paragraph-red-text {
+	color: rgb(208,91,40);
+}
+
 .article-title-paragraph-wrapper-div {
 	padding: 12px 0px ;
 }
@@ -155,4 +159,48 @@ h2 {
 	color: #d3d3d3;
 	font-style: italic;
 }
+
+.user-info {
+	text-transform: uppercase;
+	color: #7f8c8d;
+	font-weight: 500;
+	font-size: 0.9em;
+	margin-left: 20px;
+}
+
+form {
+	text-align: right;
+	margin-right: 20px; 
+}
+
+.form-input-div {
+	margin: 7px auto;
+	font-size: 0.9em;
+}
+
+input {
+	width: 350px;
+	height: 25px;
+}
+
+.comment-area-input-type {
+	height: 150px;
+	width: 620px;
+	margin-bottom: 35px;
+}
+
+.submit-button {
+	width: 625px;
+	height: 40px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	background-color: rgb(194, 56, 36);
+	border: none;
+	margin-bottom: 40px;
+}
+
+
+
+
 
